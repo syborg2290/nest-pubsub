@@ -1,0 +1,8 @@
+version: '3'
+services:
+  nestjs-app:
+    # Set the build context to the current directory
+    build: .
+    # Map port 4002 inside the container to port 4002 on the host machine
+    ports:
+      - "4002:4002"
